@@ -1,9 +1,9 @@
-import Header from "@/components/header"
-import Navigation from "@/components/navigation"
-import SectionTitle from "@/components/section-title"
-import ServiceCard from "@/components/service-card"
-import TestimonialCard from "@/components/testimonial-card"
-import { Code, Palette, Smartphone, Briefcase } from "lucide-react"
+import Header from "@/components/header";
+import Navigation from "@/components/navigation";
+import SectionTitle from "@/components/section-title";
+import ServiceCard from "@/components/service-card";
+import TestimonialCard from "@/components/testimonial-card";
+import { Code, Palette, Smartphone, Briefcase } from "lucide-react";
 
 export default function Home() {
   return (
@@ -11,23 +11,29 @@ export default function Home() {
       <Header showContactInfo={true} />
       <Navigation />
 
-      <div className="glass-card rounded-lg p-6 mb-6 border-primary/30 shadow-lg">
+      <div className="glass-card border  rounded-lg p-6 mb-6 border-primary/30 shadow-lg">
         <SectionTitle title="About Me" />
 
         <div className="space-y-4 text-foreground/90 mb-6">
           <p>
-            I am Full Stack MERN Developer specializing in turning ideas into robust digital solutions. With expertise
-            in JavaScript, React.js, Node.js, Express, CSS, and HTML, I excel in crafting sophisticated websites and
-            cutting-edge tech products. My skills include creating intuitive user interfaces and integrating external
-            services seamlessly for optimal functionality.
+            I am Full Stack MERN Developer specializing in turning ideas into
+            robust digital solutions. With expertise in JavaScript, React.js,
+            Node.js, Express, CSS, and HTML, I excel in crafting sophisticated
+            websites and cutting-edge tech products. My skills include creating
+            intuitive user interfaces and integrating external services
+            seamlessly for optimal functionality.
           </p>
           <p>
-            As a tenacious and detail-oriented project manager, I oversee every project phase from conception to
-            deployment with meticulous attention to detail. I have a proven track record of delivering scalable,
-            high-performing, and reliable solutions that exceed client expectations. Let's collaborate to bring your
-            vision to life, focusing on innovation, quality, and impactful outcomes.
+            As a tenacious and detail-oriented project manager, I oversee every
+            project phase from conception to deployment with meticulous
+            attention to detail. I have a proven track record of delivering
+            scalable, high-performing, and reliable solutions that exceed client
+            expectations. Let's collaborate to bring your vision to life,
+            focusing on innovation, quality, and impactful outcomes.
           </p>
-          <p className="font-medium text-primary">Your vision + My Proficiency = Scalable</p>
+          <p className="font-medium text-primary">
+            Your vision + My Proficiency = Scalable
+          </p>
         </div>
 
         <SectionTitle title="What I'm Doing" />
@@ -71,6 +77,5 @@ export default function Home() {
         </div>
       </div>
     </>
-  )
+  );
 }
-
