@@ -8,7 +8,7 @@ import { Code, Palette, Smartphone, Briefcase } from "lucide-react";
 export default function Home() {
   return (
     <>
-      <Header showContactInfo={true} />
+      <Header />
       <Navigation />
 
       <div className="glass-card border  rounded-lg p-6 mb-6 border-primary/30 shadow-lg">

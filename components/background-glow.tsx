@@ -33,8 +33,8 @@ export function BackgroundGlow() {
           background: `
             radial-gradient(circle at 15% 50%, ${
               theme === "dark"
-                ? "rgba(5, 150, 105, 0.5)" // emerald-600
-                : "rgba(167, 243, 208, 0.4)" // emerald-200
+                ? "rgba(16, 18, 27, 0.7)"
+                : "rgba(255, 255, 255, 0.7)"
             }, transparent 35%),
             radial-gradient(circle at 85% 30%, ${
               theme === "dark"
