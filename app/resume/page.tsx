@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/header";
 import Navigation from "@/components/navigation";
 import SectionTitle from "@/components/section-title";
@@ -6,13 +8,35 @@ import SkillBar from "@/components/skill-bar";
 import TechnicalSkills from "@/components/skillls";
 
 export default function Resume() {
+  // Function to handle resume download
+  const handleDownload = () => {
+    // Replace this URL with the actual path to your resume PDF
+    const resumeUrl = "/path/to/your/resume.pdf";
+
+    // Create a temporary link element
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "YourName_Resume.pdf"; // Customize the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <Header />
       <Navigation />
 
       <div className="glass-card rounded-lg p-6 mb-6 border-primary/30 shadow-lg">
-        <SectionTitle title="Resume" />
+        <div className="flex items-center justify-between mb-6">
+          <SectionTitle title="Resume" />
+          <button
+            onClick={handleDownload}
+            className="px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary font-medium rounded-lg border border-primary/30 transition-colors duration-200 backdrop-blur-sm"
+          >
+            Download Resume
+          </button>
+        </div>
 
         <div className="mb-8">
           <h3 className="text-xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
@@ -98,7 +122,7 @@ export default function Resume() {
         </div>
 
         <div>
-          <TechnicalSkills></TechnicalSkills>
+          <TechnicalSkills />
         </div>
       </div>
     </>
