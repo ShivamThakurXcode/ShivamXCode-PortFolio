@@ -1,8 +1,9 @@
-import Header from "@/components/header"
-import Navigation from "@/components/navigation"
-import SectionTitle from "@/components/section-title"
-import TimelineItem from "@/components/timeline-item"
-import SkillBar from "@/components/skill-bar"
+import Header from "@/components/header";
+import Navigation from "@/components/navigation";
+import SectionTitle from "@/components/section-title";
+import TimelineItem from "@/components/timeline-item";
+import SkillBar from "@/components/skill-bar";
+import TechnicalSkills from "@/components/skillls";
 
 export default function Resume() {
   return (
@@ -18,13 +19,19 @@ export default function Resume() {
             Education
           </h3>
 
-          <TimelineItem title="Graduation" subtitle="Computer Science" period="2019 — 2023">
+          <TimelineItem
+            title="Graduation"
+            subtitle="Computer Science"
+            period="2019 — 2023"
+          >
             <p>
-              I am currently pursuing my Bachelor's degree in Computer Science at Dr. Bhimrao Ambedkar University, Agra.
-              This rigorous academic program has equipped me with a solid foundation in computer science concepts,
-              programming languages, and software development methodologies. I am gaining valuable hands-on experience
-              through practical projects and coursework, preparing me for a successful career in this dynamic field of
-              technology.
+              I am currently pursuing my Bachelor's degree in Computer Science
+              at Dr. Bhimrao Ambedkar University, Agra. This rigorous academic
+              program has equipped me with a solid foundation in computer
+              science concepts, programming languages, and software development
+              methodologies. I am gaining valuable hands-on experience through
+              practical projects and coursework, preparing me for a successful
+              career in this dynamic field of technology.
             </p>
           </TimelineItem>
 
@@ -34,17 +41,24 @@ export default function Resume() {
             period="2017 — 2019"
           >
             <p>
-              I completed my secondary education in the PCM (Physics, Chemistry, Mathematics) stream from the Uttar
-              Pradesh Board. This educational background provided me with a solid understanding of scientific principles
-              and mathematical concepts, laying the groundwork for my academic journey in the field of Computer Science.
+              I completed my secondary education in the PCM (Physics, Chemistry,
+              Mathematics) stream from the Uttar Pradesh Board. This educational
+              background provided me with a solid understanding of scientific
+              principles and mathematical concepts, laying the groundwork for my
+              academic journey in the field of Computer Science.
             </p>
           </TimelineItem>
 
-          <TimelineItem title="Higher Education" subtitle="Computer Science" period="2015 — 2017">
+          <TimelineItem
+            title="Higher Education"
+            subtitle="Computer Science"
+            period="2015 — 2017"
+          >
             <p>
-              I obtained my high school diploma from SKJ Inter College, located in Agra, Uttar Pradesh. During this
-              period, I developed a strong academic foundation and acquired essential skills that paved the way for my
-              educational pursuits in Computer Science.
+              I obtained my high school diploma from SKJ Inter College, located
+              in Agra, Uttar Pradesh. During this period, I developed a strong
+              academic foundation and acquired essential skills that paved the
+              way for my educational pursuits in Computer Science.
             </p>
           </TimelineItem>
         </div>
@@ -54,33 +68,39 @@ export default function Resume() {
             Experience
           </h3>
 
-          <TimelineItem title="Freelance MERN Developer" subtitle="Self-Employed" period="2021 — Present">
+          <TimelineItem
+            title="Freelance MERN Developer"
+            subtitle="Self-Employed"
+            period="2021 — Present"
+          >
             <ul className="list-disc pl-4 space-y-2">
-              <li>Developed custom websites for various clients, focusing on responsive design and user experience.</li>
-              <li>Collaborated with clients to gather requirements and deliver tailored web solutions.</li>
-              <li>Improved website performance on time and SEO through best practices in web development.</li>
-              <li>Implemented secure authentication systems using JWT and bcrypt.</li>
-              <li>Managed version control and project collaboration using Git and GitHub.</li>
+              <li>
+                Developed custom websites for various clients, focusing on
+                responsive design and user experience.
+              </li>
+              <li>
+                Collaborated with clients to gather requirements and deliver
+                tailored web solutions.
+              </li>
+              <li>
+                Improved website performance on time and SEO through best
+                practices in web development.
+              </li>
+              <li>
+                Implemented secure authentication systems using JWT and bcrypt.
+              </li>
+              <li>
+                Managed version control and project collaboration using Git and
+                GitHub.
+              </li>
             </ul>
           </TimelineItem>
         </div>
 
         <div>
-          <h3 className="text-xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-            My Skills
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-            <SkillBar skill="Web Design" percentage={90} />
-            <SkillBar skill="Graphic Design" percentage={70} />
-            <SkillBar skill="C/C++" percentage={80} />
-            <SkillBar skill="WordPress" percentage={75} />
-            <SkillBar skill="React" percentage={85} />
-            <SkillBar skill="JavaScript" percentage={95} />
-          </div>
+          <TechnicalSkills></TechnicalSkills>
         </div>
       </div>
     </>
-  )
+  );
 }
-
